@@ -595,11 +595,7 @@ func main() {
 		os.Exit(0)
 	}()
 
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080" // default value
-	}
-
+	
 	log.Printf("Server is running on port %s...\n", port)
 	log.Fatal(http.ListenAndServe(":"+port, handlers.CORS(headers, methods, origins)(router)))
 }
