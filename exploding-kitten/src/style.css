@@ -1,0 +1,83 @@
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #73c0e3;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.start-page-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  overflow: hidden;
+}
+.get-started-button{
+  margin-top: 10px;
+}
+.user-page-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.user-name-input{
+  padding:10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border:1px solid black;
+  margin-bottom:10px;
+}
+.register-button{
+  margin-right:10px;
+}
+.home-page-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  overflow: hidden;
+}
+.win-loss-defuse-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.card {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
