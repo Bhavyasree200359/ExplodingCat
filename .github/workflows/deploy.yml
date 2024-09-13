@@ -1,0 +1,28 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main  # or master, depending on your branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: '1.23'  # specify your Go version
+
+      - name: Build
+        run: go build -o myapp
+
+      - name: Deploy
+        run: |
+          # Example command to deploy to a server
+          scp myapp user@server:/path/to/deploy
+          ssh user@server 'systemctl restart myapp'
