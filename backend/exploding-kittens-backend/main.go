@@ -411,16 +411,22 @@ type User struct {
 
 // Initialize Redis client
 func initRedis() {
-	addr := os.Getenv("REDIS_ADDR")
-	if addr == "" {
-		addr = "localhost:6379" // default value
-	}
-	password := os.Getenv("REDIS_PASSWORD") // Optionally use Redis password
-	rdb = redis.NewClient(&redis.Options{
-		Addr:     addr,
-		Password: password, // no password set if left blank
-	})
+    err := godotenv.Load()
+    if err != nil {
+        log.Fatal("Error loading .env file")
+    }
+
+    addr := os.Getenv("REDIS_ADDR")
+    password := os.Getenv("REDIS_PASSWORD")
+    if addr == "" {
+        addr = "localhost:6379" // default value
+    }
+    rdb = redis.NewClient(&redis.Options{
+        Addr:     addr,
+        Password: password, // use the password from the environment variable
+    })
 }
+
 
 // Register a new user
 func registerUser(w http.ResponseWriter, r *http.Request) {
