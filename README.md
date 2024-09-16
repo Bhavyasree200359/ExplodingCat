@@ -17,7 +17,6 @@ This is a full-stack web application where users can register, login, and track 
   - [Frontend](#frontend)
   - [Backend](#backend)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
 - [License](#license)
 
 ## Prerequisites
@@ -35,14 +34,14 @@ Make sure you have the following tools installed on your local machine:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/exploding-kitten-game.git
-    cd exploding-kitten-game
+    git clone https://github.com/Bhavyasree200359/ExplodingCat.git
+    cd Exploding Kitten-game
     ```
 
 2. Install dependencies:
 
     ```bash
-    cd frontend
+    cd exploding-kitten
     npm install
     ```
 
@@ -83,46 +82,7 @@ Make sure you have the following tools installed on your local machine:
 
 1. Open the frontend in your browser: `http://localhost:3000`.
 
-2. You can register as a new user, log in, and then view your game stats. You can also update your stats after each game, and the leaderboard will display the top players.
-
-## API Endpoints
-
-### User Registration
-
-- **Endpoint**: `/register`
-- **Method**: `POST`
-- **Description**: Registers a new user with username.
-- **Body**: 
-    ```json
-    {
-      "username": "user1"
-    }
-    ```
-
-### User Login
-
-- **Endpoint**: `/login`
-- **Method**: `POST`
-- **Description**: Logs in a user by checking if the username exists.
-- **Body**: 
-    ```json
-    {
-      "username": "user1"
-    }
-    ```
-
-### Update Stats
-
-- **Endpoint**: `/update-stats/{username}`
-- **Method**: `POST`
-- **Description**: Updates the user’s wins or losses.
-- **Query Params**: `result=win` or `result=loss`
-
-### Get Leaderboard
-
-- **Endpoint**: `/leaderboard`
-- **Method**: `GET`
-- **Description**: Retrieves the top 3 users with the most wins.
+2. You can register as a new user, log in, and then view your game stats. You can also update your stats after each game, and the leaderboard will display the top 3 players.
 
 ## License
 
