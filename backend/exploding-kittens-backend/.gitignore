@@ -1,17 +1,8 @@
-# Dependency directories
 vendor/
-
-# Build output
 bin/
 *.exe
-
-
-
-# IDE/editor files
 .idea/
 *.sublime-workspace
 *.sublime-project
-
-# OS-specific files
 .DS_Store
 *.log
