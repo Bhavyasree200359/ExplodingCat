@@ -59,6 +59,7 @@ Make sure you have the following tools installed on your local machine:
 
     ```bash
     cd backend
+    cd exploding-kittens-backend
     ```
 
 2. Install Go dependencies:
